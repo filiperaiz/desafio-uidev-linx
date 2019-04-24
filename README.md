@@ -52,7 +52,7 @@ Este projeto esta usando o Vue Js para a criação dos componentes (funções e 
     Ao abrir o arquivo index.html você ira ver os componentes separados por section
     
 ```html
-
+### Componente - LOGO
     <section class="logo__box">
         <img class="logo__picture" :src="logo" alt="" />
         <h2 class="logo__title">Área de acesso</h2>
