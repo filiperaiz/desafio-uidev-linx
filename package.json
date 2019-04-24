@@ -1,13 +1,7 @@
 {
-	"name": "GuerraDigital",
-	"description": "Descriçâo da loja",
+	"name": "Filipe Raiz",
+	"description": "Desafio Ui Dev Linx",
 	"version": "1.0.0",
-	"author": "Nome de quem fez a loja",
-	"license": "Rakuten",
-	"repository": {
-		"type": "git",
-		"url": "link do gitlab da loja"
-	},
 	"devDependencies": {
 		"@babel/core": "^7.4.3",
 		"@babel/preset-env": "^7.4.3",
