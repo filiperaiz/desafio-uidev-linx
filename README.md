@@ -1,40 +1,60 @@
 # Desafio UI Developer (Linx Digital)
 
-### Instruções
+> Documentação do componentente da tela de login
 
-1. **Faça um fork** desse repositório na sua conta do GitHub.
-2. Acesse este [arquivo no Figma](https://www.figma.com/file/TnLJoHhOyyIHl7OKiM2AT72Q/Desafio-UI-Front?node-id=0%3A1) para visualizar a interface em que se baseia esse desafio. Alternativamente, visualize a [imagem final da interface](https://drive.google.com/open?id=11RboMTeR6VGf1nCZAZLlMlP81btmcNnz) para referência.
-3. **A sua missão é**:
+## Instalando o gulp projeto
 
-- Implementar o front-end da tela de cadastro apresentada, para depois componentizar os elementos (mais detalhes no item 4).
-- Esse formulário deverá ter uma validação simples no front-end.
-- Os estilos de feedback, como erro de validação do campo e possíveis mensagens, ficam por sua conta ;)
+```sh
 
-Validações esperadas:
+$ npm install gulp-cli -g
+$ npm install gulp -D
 
-* Validação de e-mail
-* Validação de senha:
-   * Mínimo de 8 caracteres
-   * Pelo menos um número
-   * Pelo menos uma letra maiúscula
+```
 
-4. Além da tela implementada, esperamos que você **documente todos os componentes** mapeados no item anterior em outra(s) página(s), compondo uma parte de um Design System. Essa documentação deverá ser auto-explicativa... imagine que outra pessoa possa consultá-la e construir uma tela igual àquela que você implementou no item 3.  
-5. Assim que concluir o seu desafio, publique a tela implementada e a documentação usando o [GitHub Pages](https://pages.github.com/) no seu projeto.
+## Iniciando o projeto
 
-**Resultado final esperado:** dois links (tela + documentação) na nossa caixa de e-mail **36h depois** de ter recebido o desafio :)
+```sh
+$ npm i
 
-### Informações adicionais
-Você pode pode usar frameworks como Node/React/Angular/Vue, ou JavaScript puro. 
+# build
+$ gulp
 
-Diferenciais: 
-- Simular interações e animações que não foram especificadas no Figma.
-- A tela implementada e a documentação serem responsivas.
-- Uma boa organização de pastas e arquivos.
-- Os textos e o formato da documentação.
-- A utilização de alguma automatização (Webpack, Grunt, Gulp, NPM Scripts). 
+# Watch
+$ gulp w
+```
 
----
+## CSS
 
-Em caso de dúvidas, responda o e-mail por onde você recebeu o desafio.
+Este projeto esta usando Sass como preprocessador, ultilizando o padrão BEM para a nomeclatura das classes.
 
-**Boa sorte =]**
+## JS
+
+Este projeto esta usando o Vue Js para a criação dos componentes (funções e validações)
+
+
+## Estrutura de pastas do projeto
+
+- gulp-taks
+    Dentro desta pasta contem os arquivos especifico para cada tarefa que sera realizada pelo gul
+
+- src
+    Nesta pasta é onde fica a aplicação
+
+- scss
+    Todo os estilo dos components estao nesta pasta, nela possui subpastas para deixar mais facil a organização dos estilos dos components, o nome de cada arquivos é referente ao seu componente
+
+- js
+    O arquivo app.js é onde fica as configurações funções e validações dos components
+
+- templates
+    Aqui se encontra o html dos componentes
+
+    Ao abrir o arquivo index.html você ira ver os componentes separados por section
+    
+```html
+
+    <section class="logo__box">
+        <img class="logo__picture" :src="logo" alt="" />
+        <h2 class="logo__title">Área de acesso</h2>
+    </section>
+```
