@@ -35,19 +35,19 @@ Este projeto esta usando o Vue Js para a criação dos componentes (funções e 
 ## Estrutura de pastas do projeto
 
 ### gulp-taks
-    -   Dentro desta pasta contem os arquivos especifico para cada tarefa que sera realizada pelo gul
+    -   Dentro desta pasta contém os arquivos especificos para cada tarefa que sera realizada pelo gulp
 
 ### src
-    -   Nesta pasta é onde fica a aplicação
+    -   Pasta onde fica toda aplicação
 
 ### scss
-    -   Todo os estilo dos components estao nesta pasta, nela possui subpastas para deixar mais facil a organização dos estilos dos components, o nome de cada arquivos é referente ao seu componente
+    -   Todos os estilo dos components estão nesta pasta, nela possui subpastas para deixar mais fácil a organização dos estilos dos components, cada arquivos foi nomeado referente ao seu componente
 
 ### js
     -   O arquivo app.js é onde fica as configurações funções e validações dos components
 
 ### templates
-    -   Aqui se encontra o html dos componentes
+    -   Html dos componentes
     -   Ao abrir o arquivo index.html você ira ver os componentes separados por blocos
     
 ## Componentes
