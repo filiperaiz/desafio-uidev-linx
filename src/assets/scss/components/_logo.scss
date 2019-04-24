@@ -1,0 +1,29 @@
+@include global {
+	.logo {
+		&__box {
+			padding: 15px 0 0;
+		}
+
+		&__picture {
+			display: block;
+			margin-bottom: 20px;
+			max-width: 150px;
+			width: 100%;
+
+			@include mobile {
+				margin: 0 auto 10px;
+				max-width: 100px;
+			}
+		}
+
+		&__title {
+			color: $color-white;
+			font-size: 1.5rem;
+			font-weight: normal;
+			margin: 0;
+		}
+	}
+}
+
+@include desktop {
+}

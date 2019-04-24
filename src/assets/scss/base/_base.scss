@@ -1,0 +1,94 @@
+html {
+    font: 400 100%/1.7 $base;
+    height: 100% ;
+  }
+  
+
+body {
+	-webkit-animation: slide 20s linear infinite;
+	animation: slide 20s linear infinite;
+	background: url(../img/bg-shape.png) repeat 0 0;
+	background-color: #7a4a8c;
+	background-size: cover;
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+@-webkit-keyframes slide {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -400px 0;
+	}
+}
+
+@keyframes slide {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -400px 0;
+	}
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+label,
+div,
+b,
+i,
+strong,
+ul,
+li,
+input,
+textarea,
+select,
+td,
+th {
+	font-family: $base;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box !important;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+.fa,
+.far,
+.fas {
+	font-family: $icons;
+}
+
+// -------------------------------------
+// Links
+// -------------------------------------
+a {
+	color: $color-black;
+	text-decoration: underline;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+
+	&:hover {
+		color: $color-black;
+		text-decoration: none;
+	}
+}

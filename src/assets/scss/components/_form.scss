@@ -1,0 +1,84 @@
+@include global {
+	.form {
+		&__box {
+			background: $color-white;
+			border-radius: 4px;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.05);
+			margin: 10px;
+			max-width: 400px;
+			width: 100%;
+
+			@include mobile {
+				max-width: 300px;
+			}
+		}
+
+		&__title {
+			border-bottom: 1px solid $color-gray;
+			font-size: 1.2rem;
+			font-weight: normal;
+			margin: 0;
+			padding: 15px 25px;
+		}
+
+		&__group {
+			align-items: stretch;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 15px 25px;
+			position: relative;
+			width: 100%;
+
+			&-label {
+				font-size: 1rem;
+				margin-bottom: 5px;
+				width: 100%;
+			}
+
+			&-prepend {
+				align-items: center;
+				background-color: $color-white;
+				border: 1px solid $color-gray;
+				border-radius: 4px 0px 0px 4px;
+				border-right: none;
+				display: flex;
+				justify-content: center;
+				width: 45px;
+			}
+
+			&-eyepassword {
+				position: absolute;
+				right: 35px;
+				top: 61px;
+				z-index: 1;
+			}
+
+			&-input {
+				border-radius: 0px 4px 4px 0px;
+				box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25);
+				flex: 1 1 auto;
+				margin-bottom: 0;
+				position: relative;
+				width: 1%;
+			}
+		}
+
+		&__actions {
+			padding: 15px 25px;
+
+			.btn {
+				width: 100%;
+			}
+
+			.divisor {
+				background-color: $color-gray;
+				border: none;
+				height: 1px;
+				margin: 20px 0;
+			}
+		}
+	}
+}
+
+@include desktop {
+}

@@ -1,0 +1,21 @@
+@include global {
+	#app {
+		align-content: center;
+		align-items: center;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		height: 100vh;
+		justify-content: space-between;
+	}
+}
+
+@include desktop {
+}
+
+@include mobile {
+}
